@@ -7,3 +7,6 @@ Android Studio
 
 # Steps to Run
 One can run the code by cloning the repo and running it in android studio.
+
+Base code for this project was taken from https://github.com/jashans98/kitcheneesta.
+Other modifications were added for this code.
