@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    >
+
+    <Button
+        android:id="@+id/ChoosePictureButton"
+        android:layout_width="wrap_content"
+        android:layout_height="61dp"
+        android:layout_below="@+id/containter"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_bg"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="Choose Image"
+        android:textColor="#ddffffff"
+        android:textSize="20sp" />
+
+    <ImageView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ChoosenImageView">
+    </ImageView>
+
+    <Button
+        android:id="@+id/SavePictureButton"
+        android:layout_width="wrap_content"
+        android:layout_height="61dp"
+        android:layout_below="@+id/containter"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="110dp"
+        android:background="@drawable/button_bg"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="Save Image"
+        android:textColor="#ddffffff"
+        android:textSize="20sp" />
+
+</LinearLayout>

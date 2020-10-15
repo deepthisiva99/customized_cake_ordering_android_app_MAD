@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:visibility="visible"
+    tools:context="com.kitcheneesta.kitcheneesta.SliderActivity"
+    tools:visibility="visible"
+    android:background="@drawable/background">
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPage"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp">
+
+    </androidx.viewpager.widget.ViewPager>
+    <Button
+        android:id="@+id/finalizeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="61dp"
+        android:layout_below="@+id/viewPage"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_bg"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="Finalize"
+        android:textColor="#ddffffff"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

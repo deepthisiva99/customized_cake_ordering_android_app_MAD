@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.kitcheneesta.kitcheneesta.DeliverActivity"
+    android:background="@drawable/background">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Delivery Details"
+        android:id="@+id/deliver_heading"
+        android:textSize="34sp"
+        android:textColor="#ddffffff"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/deliver_heading"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/container_bg"
+        android:layout_marginTop="20dp"
+        android:padding="3dp"
+        android:id="@+id/containter">
+
+        <GridView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:id="@+id/deliverGrid"
+            android:background="#00000000"
+            android:numColumns="4"
+            android:verticalSpacing="2dp"
+            android:horizontalSpacing="2dp"
+            android:paddingLeft="10dp"
+            android:layout_below="@+id/cash_prompt_label"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="6dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:id="@+id/address_prompt"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:textSize="20sp"
+            android:textColor="#beffffff"
+            android:padding="3dp"
+            android:layout_marginTop="12dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/address_edit_text"
+            android:layout_below="@+id/address_prompt"
+            android:layout_alignStart="@+id/address_prompt"
+            android:textSize="14sp"
+            android:textColorHint="#99ffffff"
+            android:textColor="#eeffffff"
+            android:layout_marginTop="6dp"
+            android:inputType="textCapWords"
+            android:background="@drawable/abc_edit_text_material"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cash On Delivery Only"
+            android:id="@+id/cash_prompt_label"
+            android:textSize="20sp"
+            android:textColor="#beffffff"
+            android:padding="3dp"
+            android:layout_below="@+id/ph_edit_text"
+            android:layout_alignStart="@+id/ph_edit_text"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone No"
+            android:id="@+id/ph_prompt"
+            android:textSize="20sp"
+            android:textColor="#beffffff"
+            android:padding="3dp"
+            android:layout_below="@+id/address_edit_text"
+            android:layout_alignStart="@+id/address_edit_text"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ph_edit_text"
+            android:textSize="14sp"
+            android:textColorHint="#99ffffff"
+            android:textColor="#eeffffff"
+            android:layout_below="@+id/ph_prompt"
+            android:layout_alignStart="@+id/ph_prompt"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="12dp"
+            android:inputType="textCapWords"
+            android:background="@drawable/abc_edit_text_material"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="157dp"
+        android:layout_height="84dp"
+        android:layout_below="@+id/containter"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="134dp"
+        android:layout_marginBottom="71dp"
+        android:background="@drawable/button_bg"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="Continue "
+        android:textColor="#ddffffff"
+        android:textSize="20sp" />
+
+</RelativeLayout>
