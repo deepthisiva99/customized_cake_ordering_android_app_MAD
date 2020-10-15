@@ -13,8 +13,8 @@ This application is a cake ordering app.This app includes the scribble over imag
 Android Studio
 
 ## Languages
-Java
-XML
+* Java
+* XML
 
 ## Steps to Run
 One can run the code by cloning the repo and running it in android studio.
